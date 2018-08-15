@@ -14,7 +14,7 @@ We built this in UiPath using the HTTP Request Activity which makes an API call 
 
 The inference server is built with flask and gunicorn. It exposes an API endpoint that executes the document classification model trained with Keras and returns its result in JSON format.
 
-More details about deploying an inference server can be found in [Configuring an inference server](https://github.com/mccm-innovations/UiPath_Document_Classification/tree/master/inference_server).
+More details about how to deploy an inference server can be found in [Configuring an inference server](https://github.com/mccm-innovations/UiPath_Document_Classification/tree/master/inference_server).
 
 ## Video demo
 [![UiPath Document Classification Video Demo](https://img.youtube.com/vi/T_pHknyUcIk/0.jpg)](https://www.youtube.com/watch?v=T_pHknyUcIk "UiPath Document Classification Video Demo")
