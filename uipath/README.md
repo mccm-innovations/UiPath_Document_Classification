@@ -1,0 +1,1 @@
+Needs Python 3.6+, 32 bit version, installed in C:\Python36 - it's the only way it works for the time being.
