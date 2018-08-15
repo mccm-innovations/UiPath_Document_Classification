@@ -2,6 +2,9 @@
 ## Dependencies
 Library dependencies for the python code.  You need to install these with
 `pip install -r requirements.txt` before you can run this.
+
+**NOTE:** This server has been tested in Ubuntu 16.04 and Python 3.5.
+
 ## How to run it
 ### Download model
 The model to perform document classification has been hosted in Google Drive. You can download it from: https://drive.google.com/file/d/1wJUnkFiqmwok1gJ2sKHPvJIaNjfT4pk6/view?usp=sharing
