@@ -8,11 +8,13 @@ The model to perform document classification has been hosted in Google Drive. Yo
 Please, move the downloaded file **model.hdf5** to the **inference_server** folder.
 ### Environment variables
 Set the following environment variables:
+
 | Parameter         | Environment Variable | Default Value           |
 |-------------------|----------------------|-------------------------|
 | number of workers | MODEL_SERVER_WORKERS | the number of CPU cores |
 | timeout           | MODEL_SERVER_TIMEOUT | 120 seconds             |
 | nginx config path | NGINX_CONF_PATH      | /etc/nginx/nginx.conf   |
+
 Example:
 ```bash
 export MODEL_SERVER_WORKERS=1
