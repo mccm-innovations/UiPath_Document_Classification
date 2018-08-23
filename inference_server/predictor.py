@@ -83,6 +83,8 @@ def document_classification():
                 image = images[0]
             else:
                 image = Image.open(io.BytesIO(file.read()))
+                if file_extension == 'png' or file_extension == 'gif':
+                    image = image.convert('RGB')
             image = image.resize((IMAGE_SIZE, IMAGE_SIZE), resample=Image.NEAREST)
             image = np.array(image).astype(np.float32)
             image = image / 255
