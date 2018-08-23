@@ -76,8 +76,9 @@ def ping():
 def document_classification():
     if flask.request.files.get('file'):
         file = flask.request.files['file']
-        if file and get_file_extension(file.filename) in ALLOWED_EXTENSIONS:
-            if get_file_extension(file.filename) == 'pdf':
+        file_extension = get_file_extension(file.filename)
+        if file and file_extension in ALLOWED_EXTENSIONS:
+            if file_extension == 'pdf':
                 pdf = file.read()
                 images = convert_from_bytes(pdf, fmt='jpg')
                 image = images[0]
